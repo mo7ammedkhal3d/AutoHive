@@ -1,19 +1,22 @@
-import './ExpenceItem.css';
+import './ExpenseItem.css';
 
-function ExpenceItem(){
-const expenceDate = new Date(2024,2,28);
-const expencetitle = 'Car Insurance';
-const expenceAmount = 294.76;
+function ExpenseItem(props){
 
-return (<div className="expence-item">
-    <div>
-        {expenceDate.toDateString()}
+    const day = props.date.toLocaleString('en-US',{day:'2-digit'})
+    const month = props.date.toLocaleString('en-US',{day:'2-digit'})
+    const year = props.date.getFullYear();
+
+return (<div className="expense-item">
+    <div className='date'>
+        <div>{year}</div>/
+        <div>{month}</div>/
+        <div>{day}</div>      
     </div>
-    <div className="expence-item__description">
-        <h2>{expencetitle}</h2>
-        <div className="expence-item__price">${expenceAmount}</div>
+    <div className="expense-item__description">
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">${props.amount}</div>
     </div>
 </div>)
 }
 
-export default ExpenceItem;
+export default ExpenseItem;
