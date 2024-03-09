@@ -1,10 +1,6 @@
-import './ExpenceItem.css';
+import './ExpenseItem.css';
 
-function ExpenceItem(){
-const expenceDate = new Date(2024,2,28);
-const expencetitle = 'Car Insurance';
-const expenceAmount = 294.76;
-
+function ExpenseItem(){
 return (<div className="expence-item">
     <div>
         {expenceDate.toDateString()}
@@ -16,4 +12,4 @@ return (<div className="expence-item">
 </div>)
 }
 
-export default ExpenceItem;
+export default ExpenseItem;
