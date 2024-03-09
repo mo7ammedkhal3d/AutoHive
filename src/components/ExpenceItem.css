@@ -1,0 +1,42 @@
+.expence-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    width: -webkit-fill-available;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px gray;
+    background-color: #313131;
+    margin: 1rem 0;
+    margin: 2rem 0.5rem;
+}
+
+.expence-item div:first-child{
+    width: 20%;
+}
+
+.expence-item__description{
+    display: flex;
+    width: -webkit-fill-available;
+    flex: row;
+    align-items: center;
+    row-gap: 2vw;
+}
+
+.expence-item__description h2{
+    color: white;
+    margin: 0;
+}
+
+.expence-item__price{
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-left: auto;
+    justify-content: center;
+    background-color: purple;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+}
